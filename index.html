@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwigato</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+        .parent{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .child1{
+            width: 100%;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+        }
+        .child2{
+            width: 100%;
+            height: 300px;
+        }
+        .child11{
+            margin-top: 3px;
+            display: flex;
+            gap: 60vw;
+            justify-content: end;
+            flex-wrap: nowrap;
+        }
+        #logo{
+            width: 90px;
+        }
+        .ls{
+            display: flex;
+            gap: 20px;
+            padding-top: 13px;
+            padding-right: 30px;
+        }
+
+        #signup{
+            width: 70px;
+            margin-right: 10px;
+        }
+        /* .explorediv{
+                display: flex;
+                margin-top: 50px;
+                justify-content: center;
+        } */
+        @media (max-width:1700px){
+            .child1{
+               width: 100%;
+               height: 249px; 
+            }
+            .child2{
+               width: 100%;
+               height: 249px;
+            }
+            .child11{
+                margin-top: 3px;
+                display: flex;
+                gap: 91px;
+                justify-content: end;
+            }
+            #logo{
+                margin-top: 3px;
+                width: 100px;
+            }
+            .ls{
+                display: flex;
+                gap: 20px;
+                padding-top: 13px;
+                padding-right: 10px;
+            }
+            #login{
+                width: 50px;
+                height: 30px;
+                border: none;
+                background-color: rgb(0,0,0);
+                color: white;
+            }
+            #login:hover{
+                background-color: rgb(217, 103, 29);
+                color: rgb(0,0,0);
+            }
+            #signup{
+                width: 70px;
+                height: 30px;
+                margin-right: 3px;
+                background-color: rgb(217, 103, 29);
+                border: none;
+            }
+            #signup:hover{
+                background-color: rgb(0,0,0);
+                color: white;
+            }
+            .location{
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                height: 50px;
+                gap: 2px;
+                margin-left: 5px;
+            }
+            #search{
+                font-size: 18px;
+            }
+            #findfood{
+                background-color: rgb(217, 103, 29);
+                border: none;
+                width: 80px;
+                font-size: 18px;
+                border-radius: 1mm;
+            }
+            #findfood:hover{
+                background-color: rgb(0,0,0);
+                color: white;
+            }
+            #pizzabanner{
+                margin-top: 1px;
+                width: 370px;
+                height: 250px;
+                object-fit: cover;
+                position: absolute;
+                opacity: 0.7;
+            }
+            #pizzah2{
+                position: relative;
+                top: 100px;
+                left: 10px;
+            }
+            #pizzah3{
+                position: relative;
+                color: rgb(53, 52, 51);
+                top: 90px;
+                left: 10px;
+                font-size: 20px;
+                font-weight: 1000;
+            }
+            .footer{
+                width: 370px;
+                height: 230px;
+                display: flex;
+                flex-wrap: wrap;
+                /* gap: 0px; */
+                background-color: black;
+                color: white;
+            }
+            #p2{
+                color: grey;
+            }
+            #p1{
+                text-align: center;
+                color: gold;
+            }
+            #warning{
+                text-align: center;
+            }
+        }
+        @media (max-width:992px){
+            .child1{
+               width: 100%;
+               height: 249px; 
+            }
+            .child2{
+               width: 100%;
+               height: 249px;
+            }
+            .child11{
+                margin-top: 3px;
+                display: flex;
+                gap: 450px;
+                justify-content: end;
+            }
+            #logo{
+                width: 150px;
+            }
+            .ls{
+                display: flex;
+                gap: 20px;
+                padding-top: 13px;
+                padding-right: 10px;
+            }
+
+            #signup{
+                width: 70px;
+                margin-right: 10px;
+            }
+            /* .explorediv{
+                display: flex;
+                margin-top: 120px;
+                justify-content: center;
+            } */
+        }
+        @media (max-width:600px) {
+            .child1{
+               width: 100%;
+               height: 249px; 
+            }
+            .child2{
+               width: 100%;
+               height: 249px;
+            }
+            .child11{
+                margin-top: 3px;
+                display: flex;
+                gap: 91px;
+                justify-content: end;
+            }
+            #logo{
+                margin-top: 3px;
+                width: 100px;
+            }
+            .ls{
+                display: flex;
+                gap: 20px;
+                padding-top: 13px;
+                padding-right: 10px;
+            }
+            #login{
+                width: 50px;
+                height: 30px;
+                border: none;
+                background-color: rgb(0,0,0);
+                color: white;
+            }
+            #login:hover{
+                background-color: rgb(217, 103, 29);
+                color: rgb(0,0,0);
+            }
+            #signup{
+                width: 70px;
+                height: 30px;
+                margin-right: 3px;
+                background-color: rgb(217, 103, 29);
+                border: none;
+            }
+            #signup:hover{
+                background-color: rgb(0,0,0);
+                color: white;
+            }
+            .location{
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                height: 50px;
+                gap: 2px;
+                margin-left: 5px;
+            }
+            #search{
+                font-size: 18px;
+            }
+            #findfood{
+                background-color: rgb(217, 103, 29);
+                border: none;
+                width: 80px;
+                font-size: 18px;
+                border-radius: 1mm;
+            }
+            #findfood:hover{
+                background-color: rgb(0,0,0);
+                color: white;
+            }
+            #pizzabanner{
+                width: 370px;
+                height: 250px;
+                object-fit: cover;
+                position: absolute;
+                opacity: 0.7;
+            }
+            #pizzah2{
+                position: relative;
+                top: 100px;
+                left: 10px;
+            }
+            #pizzah3{
+                position: relative;
+                color: rgb(53, 52, 51);
+                top: 90px;
+                left: 10px;
+                font-size: 20px;
+                font-weight: 1000;
+            }
+            .footer{
+                width: 370px;
+                height: 230px;
+                display: flex;
+                flex-wrap: wrap;
+                /* gap: 0px; */
+                background-color: black;
+                color: white;
+            }
+            .child3{
+                display: flex;
+                gap: 60px;
+                flex-wrap: wrap;
+            }
+            #p1{
+                margin-top: 40px;
+            }
+            #p2{
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+            <div class="child11">
+                <img id="logo" src="img/zwigato.png" alt="logo">
+                <div class="ls">
+                    <a href=""><button id="login">Login</button></a>
+                    <a href=""><button id="signup">Sign Up</button></a>
+                </div>
+            </div>
+            <hr style="margin-left: 11px;">
+            <p style="margin-left: 15px; margin-top: 5px; font-size: 20px; font-weight: 600;">Hurry Up!</p>
+            <p style="margin-left: 15px; padding-top: 0px;">Order food from favourite restaurants near you.</p>
+            <div class="location">
+                <input type="text" name="input" id="search" placeholder="Enter Your Address Here">
+                <button id="findfood">Find</button>
+            </div>
+            <div id="warning"><p>*ToContinue, Please signup</p></div>
+        </div>
+        <div class="child2">
+            <img src="img/pizza.jpg" alt="photo" id="pizzabanner">
+            <h3 id="pizzah3">Upto 50% off</h3>
+            <h2 id="pizzah2">Explore Wide range Of Pizza</h2>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="p2"><p>*Note: Website content may only visible on selected devices</p></div>
+        <div id="p1"><p>This website is made by ©saurabhperane, ©vedantghorpade, ©sahilwable, ©anujwagh</p></div>
+    </div>
+</body>
+</html>
